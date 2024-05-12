@@ -25,7 +25,7 @@ stored.
 ## Client:
 
 ```
-mport socket
+import socket
 s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
@@ -73,7 +73,8 @@ try:
 c.send(address[ip].encode())
 except KeyError:
 c.send("Not Found".encode())
-## Server:
+
+### Server
 ```
 import socket
 s = socket.socket()
@@ -84,14 +85,15 @@ s.send(ip.encode())
 print("Logical Address",s.recv(1024).decode())
 ```
 
-## OUTPUT -RARP
-## Client:
+###  OUTPUT -RARP
+###  Client:
 
-![image](https://github.com/sruthiviswanadham/2c.ARP_RARP_PROTOCOLS/assets/151760421/2d08dc6b-29c6-46ae-8048-e54a2eea8bce)
+![image](https://github.com/sruthiviswanadham/2c.ARP_RARP_PROTOCOLS/assets/151760421/71bc9d84-3972-4590-a30b-ddce0806db87)
 
-## Server:
+### Server:
 
-![image](https://github.com/sruthiviswanadham/2c.ARP_RARP_PROTOCOLS/assets/151760421/113ded18-6fab-4b0d-b2e1-8da56e6810b9)
+![image](https://github.com/sruthiviswanadham/2c.ARP_RARP_PROTOCOLS/assets/151760421/36d3e8e1-579d-48e4-88c9-5b0f575d7bf8)
+
 
 
 ## RESULT
