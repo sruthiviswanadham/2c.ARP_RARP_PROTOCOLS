@@ -73,8 +73,8 @@ try:
 c.send(address[ip].encode())
 except KeyError:
 c.send("Not Found".encode())
-
-### Server
+```
+## Server
 ```
 import socket
 s = socket.socket()
@@ -85,12 +85,11 @@ s.send(ip.encode())
 print("Logical Address",s.recv(1024).decode())
 ```
 
-###  OUTPUT -RARP
-###  Client:
+##  OUTPUT -RARP
+##  Client:
 
 ![image](https://github.com/sruthiviswanadham/2c.ARP_RARP_PROTOCOLS/assets/151760421/71bc9d84-3972-4590-a30b-ddce0806db87)
-
-### Server:
+## Server:
 
 ![image](https://github.com/sruthiviswanadham/2c.ARP_RARP_PROTOCOLS/assets/151760421/36d3e8e1-579d-48e4-88c9-5b0f575d7bf8)
 
